@@ -4,7 +4,7 @@
 #========================================
 
 
-restart_passwall() {
+restart_passwall2() {
     info "Restarting Passwall 2 service..."
     passwall_service restart
     sleep 3

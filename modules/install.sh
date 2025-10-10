@@ -3,7 +3,7 @@
 # install.sh - Install Passwall v2
 #========================================
 
-install_passwall() {
+install_passwall2() {
 
     info "Checking required commands..."
     check_command opkg
@@ -28,7 +28,7 @@ install_passwall() {
 
     # Step 3: Add Passwall 2 repositories
     info "Adding Passwall 2 repositories..."
-    add_passwall_feeds
+    add_passwall2_feeds
 
     # Step 4: Update package lists
     info "Updating package lists..."

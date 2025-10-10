@@ -4,7 +4,7 @@
 #========================================
 
 
-stop_passwall() {
+stop_passwall2() {
     info "Stopping Passwall 2 service..."
     passwall_service stop
     sleep 3

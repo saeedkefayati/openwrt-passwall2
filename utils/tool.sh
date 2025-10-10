@@ -126,7 +126,7 @@ passwall_service() {
 # -------------------------------
 # Passwall 2 Add Feeds
 # -------------------------------
-add_passwall_feeds() {
+add_passwall2_feeds() {
     [ -z "$RELEASE_MAJOR" ] && { error "RELEASE_MAJOR not set! Run get_openwrt_info first."; return 1; }
     [ -z "$ARCH" ] && { error "ARCH not set! Run get_openwrt_info first."; return 1; }
     [ -z "$RELEASE_TYPE" ] && { error "RELEASE_TYPE not set! Run get_openwrt_info first."; return 1; }

@@ -4,7 +4,7 @@
 #========================================
 
 
-exit_passwall() {
+exit_passwall2() {
     info "Exiting Passwall v2..."
     exit 0
 }

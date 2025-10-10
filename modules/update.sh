@@ -4,7 +4,7 @@
 #========================================
 
 
-update_passwall() {
+update_passwall2() {
     info "Updating package lists..."
     opkg update
     

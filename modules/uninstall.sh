@@ -3,7 +3,7 @@
 # uninstall.sh - Uninstall Passwall v2
 #========================================
 
-uninstall_passwall() {
+uninstall_passwall2() {
     # Step 1: Stop the Passwall 2 service
     info "Stopping Passwall 2 service..."
     passwall_service stop

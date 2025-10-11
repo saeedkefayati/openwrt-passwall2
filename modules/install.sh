@@ -36,10 +36,10 @@ install_passwall2() {
 
     # Step 5: Install Passwall v2
     info "Installing Passwall 2..."
-    if opkg list-installed | grep -q "$PASSWALL_PACKAGE"; then
+    if opkg list-installed | grep -q "$PASSWALL2_PACKAGE"; then
         info "Passwall 2 already installed, skipping."
     else
-        opkg install "$PASSWALL_PACKAGE" || { error "Failed to install Passwall 2"; return 1; }
+        opkg install "$PASSWALL2_PACKAGE" || { error "Failed to install Passwall 2"; return 1; }
     fi
 
     # Step 6: Install Package Dependency Based On OS Version

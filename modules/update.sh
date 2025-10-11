@@ -9,7 +9,7 @@ update_passwall2() {
     opkg update
     
     info "Updating Passwall 2 package..."
-    if ! opkg install "$PASSWALL_PACKAGE"; then
+    if ! opkg install "$PASSWALL2_PACKAGE"; then
         error "Update failed!"
         return 1
     fi

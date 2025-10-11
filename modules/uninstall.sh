@@ -6,7 +6,7 @@
 uninstall_passwall2() {
     # Step 1: Stop the Passwall 2 service
     info "Stopping Passwall 2 service..."
-    passwall_service stop
+    passwall2_service stop
 
     # Step 2: Remove the Passwall 2 package
     info "Removing Passwall 2 package..."

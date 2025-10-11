@@ -15,7 +15,7 @@ update_passwall2() {
     fi
 
     info "Restarting Passwall 2 service after update..."
-    passwall_service restart
+    passwall2_service restart
 
     success "Update completed successfully!"
     sleep 3

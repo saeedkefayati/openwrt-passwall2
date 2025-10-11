@@ -6,7 +6,7 @@
 
 stop_passwall2() {
     info "Stopping Passwall 2 service..."
-    passwall_service stop
+    passwall2_service stop
     sleep 3
 }
 

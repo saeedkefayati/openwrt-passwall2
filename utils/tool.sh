@@ -103,7 +103,7 @@ show_core_status() {
 # -------------------------------
 # Passwall 2 Service Runner
 # -------------------------------
-passwall_service() {
+passwall2_service() {
     action="$1" # 'start', 'stop', 'restart', etc.
 
     if ! [ -x "$PASSWALL2_SERVICE_DIR" ]; then

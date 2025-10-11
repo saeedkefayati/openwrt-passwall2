@@ -70,10 +70,14 @@ install_passwall2() {
     uci commit passwall2
     
     info "Enabling service on boot..."
-    passwall_service enable
-    
-    info "Restarting service to apply settings..."
-    passwall_service restart
+    passwall2_service enable
+
+    info "Stopping service to apply new settings..."
+    passwall2_service stop
+    sleep 2
+
+    info "Starting service with new settings..."
+    passwall2_service start
 
     success "Passwall 2 installation completed successfully!"
     sleep 3

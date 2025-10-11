@@ -6,7 +6,7 @@
 
 start_passwall2() {
     info "Starting Passwall 2 service..."
-    passwall_service start
+    passwall2_service start
     sleep 3
 }
 

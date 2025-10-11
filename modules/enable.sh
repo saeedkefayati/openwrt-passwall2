@@ -6,7 +6,7 @@
 
 enable_passwall2() {
     info "Enabling Passwall v2 service..."
-    passwall_service enable
+    passwall2_service enable
     sleep 3
 }
 

@@ -6,7 +6,7 @@
 
 restart_passwall2() {
     info "Restarting Passwall 2 service..."
-    passwall_service restart
+    passwall2_service restart
     sleep 3
 }
 

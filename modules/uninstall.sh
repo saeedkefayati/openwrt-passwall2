@@ -16,8 +16,8 @@ uninstall_passwall2() {
     info "Removing Passwall 2 repositories..."
     FEEDS="passwall_packages passwall2"
     for feed in $FEEDS; do
-        if grep -q "$feed" /etc/opkg/customfeeds.conf; then
-            sed -i "/$feed/d" /etc/opkg/customfeeds.conf
+        if grep -q "$feed" "$CUSTOM_FEEDS_FILE"; then
+            sed -i "/$feed/d" "$CUSTOM_FEEDS_FILE"
             success "Removed feed: $feed"
         fi
     done
